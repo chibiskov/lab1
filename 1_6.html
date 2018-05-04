@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    var askLog = prompt('Кто пришел?', '');
+    if (askLog == 'Админ') {
+      var askPas = prompt('Пароль?','');
+	  if (askPas == 'Черный Властелин'){
+	  alert('Добро пожаловать !');
+	  }
+	  else if ( askPas == null){
+		alert('Вход отменен');
+	  }
+	  else {
+		alert('Пароль неверен');
+	  }
+    }
+	else if (askLog == null) {
+	alert('Вход отменен');
+	}
+	else {
+	alert('Я вас не знаю');
+	}
+  </script>
+</body>
+</html>
